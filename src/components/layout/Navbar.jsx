@@ -81,9 +81,8 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-1 text-lg font-bold no-underline" style={{ textDecoration: 'none' }}>
-            <span style={{ color: '#1565c0', fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.25rem' }}>CL</span>
-            <span style={{ color: '#0b0f1e', fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.125rem' }}> Online Marketing Agency</span>
+          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <img src="/logo.png" alt="CL Online Marketing Agency" style={{ height: '40px', width: 'auto', display: 'block' }} />
           </Link>
 
           {/* Desktop Nav */}
