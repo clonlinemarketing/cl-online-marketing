@@ -1,10 +1,9 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { Mail, Phone, MapPin, ExternalLink, Clock, CheckCircle, MessageCircle } from 'lucide-react';
+import { Mail, Phone, ExternalLink, Clock, CheckCircle, MessageCircle } from 'lucide-react';
 import Eyebrow from '../components/ui/Eyebrow';
-import ContactForm from '../components/ui/ContactForm';
 import FAQAccordion from '../components/ui/FAQAccordion';
 import HeroImage, { HERO_IMAGES } from '../components/ui/HeroImage';
-import { fadeUp, fadeLeft, fadeRight, staggerContainer, safeAnim, safeAnimAnimate, viewportOnce } from '../utils/animations';
+import { fadeUp, staggerContainer, safeAnimAnimate, viewportOnce } from '../utils/animations';
 
 export default function Contact() {
   const shouldReduce = useReducedMotion();
@@ -12,8 +11,7 @@ export default function Contact() {
   const infoCards = [
     { icon: Mail,        label: 'Email',    value: 'info@clonlinemarketing.com',          href: 'mailto:info@clonlinemarketing.com' },
     { icon: Phone,       label: 'Phone',    value: '+6011-2368 3513',                      href: 'tel:+60112368353' },
-    { icon: MapPin,      label: 'Location', value: 'Malaysia',                             href: null },
-    { icon: ExternalLink,label: 'Facebook', value: 'facebook.com/clonlinemarketingagency', href: 'https://www.facebook.com/clonlinemarketingagency', external: true },
+{ icon: ExternalLink,label: 'Facebook', value: 'facebook.com/clonlinemarketingagency', href: 'https://www.facebook.com/clonlinemarketingagency', external: true },
   ];
 
   return (
@@ -32,17 +30,10 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* FORM + INFO */}
+      {/* INFO */}
       <section className="py-16 px-6" style={{ background: '#F5F7FA' }}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <div className="neumorphic p-8">
-              <h2 className="mb-6 text-2xl">Send Us a Message</h2>
-              <ContactForm />
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
+        <div className="max-w-2xl mx-auto">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <h2 className="mb-6 text-2xl">Or Reach Us Directly</h2>
             <div className="space-y-4 mb-6">
               {infoCards.map(({ icon: Icon, label, value, href, external }) => (
