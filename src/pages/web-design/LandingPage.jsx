@@ -16,10 +16,10 @@ export default function LandingPage() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>Single Landing Page Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>Single Landing Page</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>One Page. One Goal.<br /><span style={{ color: '#29b6f6' }}>Maximum Conversion.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>A focused, high-converting landing page built for Malaysian businesses that want fast results — product launches, campaigns, service enquiries, and lead generation.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>A focused, high-converting landing page built for businesses that want fast results — product launches, campaigns, service enquiries, and lead generation.</motion.p>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.landing} alt="Single landing page design" badge={{ text: 'Live in 1–2 Weeks', icon: Clock }} badge2={{ text: 'Conversion-Optimised', icon: Target }} delay={0.2} />
         </div>
@@ -58,7 +58,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}><h2>What's Included in Your Landing Page.</h2></motion.div>
           <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            {[{ icon: Target, title: 'Conversion-Focused Design', body: 'Every section is structured to guide visitors toward one clear action — no distractions.' }, { icon: Smartphone, title: 'Mobile-First Responsive', body: 'Looks sharp and loads fast on every device — smartphone, tablet, and desktop.' }, { icon: Search, title: 'SEO & Ad-Ready Structure', body: 'Optimised for both organic search and paid campaign landing page quality scores.' }, { icon: Zap, title: 'Fast Load Speed', body: 'Speed-optimised for Malaysian mobile users — fast loading means fewer bounces.' }, { icon: BarChart3, title: 'Analytics & Tracking', body: 'Google Analytics and conversion tracking set up so you can measure every lead.' }, { icon: TrendingUp, title: 'Lead Form & CTA', body: 'Clean contact form, WhatsApp button, or call-to-action — whatever converts best for your offer.' }].map((t) => (<motion.div key={t.title} variants={fadeUp}><TrustCard {...t} /></motion.div>))}
+            {[{ icon: Target, title: 'Conversion-Focused Design', body: 'Every section is structured to guide visitors toward one clear action — no distractions.' }, { icon: Smartphone, title: 'Mobile-First Responsive', body: 'Looks sharp and loads fast on every device — smartphone, tablet, and desktop.' }, { icon: Zap, title: 'Fast Load Speed', body: 'Speed-optimised for mobile users — fast loading means fewer bounces.' }, { icon: TrendingUp, title: 'Lead Form & CTA', body: 'Clean contact form, WhatsApp button, or call-to-action — whatever converts best for your offer.' }].map((t) => (<motion.div key={t.title} variants={fadeUp}><TrustCard {...t} /></motion.div>))}
           </motion.div>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function LandingPage() {
       <section className="py-20 px-6" style={{ background: '#FFFFFF' }}>
         <div className="max-w-4xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}><Eyebrow>FAQ</Eyebrow><h2 className="mt-3">Landing Page Questions Answered.</h2></motion.div>
-          <FAQAccordion items={[{ q: 'How quickly can a landing page be delivered?', a: 'A single landing page can typically be designed, built, and launched within 1–2 weeks, depending on how quickly you can provide content and feedback.' }, { q: 'Can a landing page help with Google Ads campaigns?', a: 'Absolutely. A dedicated landing page with a clear message matching your ad improves Quality Score, reduces cost-per-click, and increases conversion rates significantly versus sending traffic to a generic homepage.' }, { q: 'Can I update the landing page myself?', a: 'Yes. We build on platforms that allow easy content updates — changing copy, images, or offers without needing a developer.' }, { q: 'Do you write the copy for the landing page?', a: 'Yes. We write all copy optimised for your target audience and conversion goals. You review and approve before we proceed.' }]} />
+          <FAQAccordion items={[{ q: 'How quickly can a landing page be delivered?', a: 'A single landing page can typically be designed, built, and launched within 1–2 weeks, depending on how quickly you can provide content and feedback.' }, { q: 'Can a landing page help with Google Ads campaigns?', a: 'Absolutely. A dedicated landing page with a clear message matching your ad improves Quality Score, reduces cost-per-click, and increases conversion rates significantly versus sending traffic to a generic homepage.' }, { q: 'Can I update the landing page myself?', a: 'Yes. We build on platforms that allow easy content updates — changing copy, images, or offers without needing a developer.' }, { q: 'Do you write the copy for the landing page?', a: 'Yes. We write copy optimised for your target audience and conversion goals. This will have an additional cost. You review and approve before we proceed.' }]} />
         </div>
       </section>
       <CTABanner headline="Ready to Launch a High-Converting Landing Page?" cta1="Book a Call" />

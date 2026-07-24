@@ -37,7 +37,7 @@ export default function Home() {
               Grow Your Business Online<br />With Digital Marketing<br />That <span style={{ color: '#29b6f6' }}>Delivers Results.</span>
             </motion.h1>
             <motion.p className="mb-8 text-lg" style={{ color: '#4A5568', maxWidth: '520px', lineHeight: 1.7 }} variants={fadeUp}>
-              CL Online Marketing Agency helps Malaysian business owners, SMEs, startups, and
+              CL Online Marketing Agency helps business owners, SMEs, startups, and
               enterprises grow their online presence — through website design and development,
               Google SEO, AI search engine optimisation, Google Ads, social media ads, and
               social media management.
@@ -51,7 +51,7 @@ export default function Home() {
               </motion.a>
             </motion.div>
             <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
-              {['✦ Google SEO Specialists', '✦ AI Search Engine Experts', '✦ Malaysia-Based Team'].map((badge) => (
+              {['✦ Google SEO Specialists', '✦ AI Search Engine Experts', '✦ Results-Driven Agency'].map((badge) => (
                 <span key={badge} className="neumorphic px-4 py-2 text-xs font-semibold" style={{ color: '#1565c0', fontFamily: 'Inter, sans-serif' }}>
                   {badge}
                 </span>
@@ -63,8 +63,7 @@ export default function Home() {
           <HeroImage
             src={HERO_IMAGES.home}
             alt="Digital marketing analytics dashboard"
-            badge={{ text: '50+ Businesses Served', icon: Users }}
-            badge2={{ text: 'Malaysia-Based Team', icon: Globe }}
+            badge={{ text: '100+ Businesses Served', icon: Users }}
             delay={0.15}
           />
         </div>
@@ -74,11 +73,11 @@ export default function Home() {
       <section className="py-20 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <Eyebrow>The problem</Eyebrow>
+            <Eyebrow>Problem to Solution</Eyebrow>
             <h2 className="mt-3 mb-5">Your competitors are showing up online.<br />Are you?</h2>
             <p className="mb-4 leading-relaxed" style={{ color: '#4A5568' }}>
               Every day without a strong digital marketing strategy is a day your competitors capture the
-              customers that should be yours. Malaysian consumers search online, scroll social media, and
+              customers that should be yours. Consumers search online, scroll social media, and
               ask AI search engines before they make a single purchase decision.
             </p>
             <p className="leading-relaxed" style={{ color: '#4A5568' }}>
@@ -107,9 +106,9 @@ export default function Home() {
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>Our Services</Eyebrow>
             <h2 className="mt-3">Every Digital Marketing Service<br />Your Business Needs — Under One Roof.</h2>
-            <p className="mt-4 max-w-2xl mx-auto" style={{ color: '#4A5568' }}>
+            <p className="mt-4 max-w-2xl mx-auto text-center" style={{ color: '#4A5568' }}>
               From website design and development to Google SEO, AI search engine optimisation, Google Ads,
-              and social media management — we deliver measurable online marketing results for Malaysian businesses.
+              and social media management — we deliver measurable online marketing results for businesses.
             </p>
           </motion.div>
           <motion.div
@@ -124,10 +123,10 @@ export default function Home() {
               { icon: Search,     title: 'Google SEO', body: 'First-page Google rankings for the keywords your customers search. Long-term organic growth that compounds month after month.', to: '/services/search/google-seo' },
               { icon: Cpu,        title: 'AI Search Engine (GEO · AEO · AIO)', body: 'Get cited by ChatGPT, Perplexity, and Google AI Overviews. The future of search is here — be visible in it.', to: '/services/search/ai-search' },
               { icon: TrendingUp, title: 'Google Ads', body: 'Immediate, high-intent traffic from Google Search. Campaigns engineered for leads and sales — not just clicks.', to: '/services/digital-ads/google-ads' },
-              { icon: Megaphone,  title: 'Social Media Ads', body: 'Precision-targeted Facebook and Instagram ad campaigns built to reach the right Malaysian audience and convert them.', to: '/services/digital-ads/social-ads' },
+              { icon: Megaphone,  title: 'Social Media Ads', body: 'Precision-targeted Facebook and Instagram ad campaigns built to reach the right audience and convert them.', to: '/services/digital-ads/social-ads' },
               { icon: Share2,     title: 'Social Media Management', body: 'Consistent, on-brand social media content that builds your audience, grows brand awareness, and drives enquiries every month.', to: '/services/social-management' },
             ].map((s) => (
-              <motion.div key={s.title} variants={fadeUp}>
+              <motion.div key={s.title} variants={fadeUp} className="h-full">
                 <ServiceCard {...s} />
               </motion.div>
             ))}
@@ -139,8 +138,8 @@ export default function Home() {
       <section className="py-20 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <Eyebrow>By the numbers</Eyebrow>
-            <h2 className="mt-3">Trusted by Malaysian Businesses<br />to Deliver Results.</h2>
+            <Eyebrow>Proven Results</Eyebrow>
+            <h2 className="mt-3">Trusted by Businesses<br />to Deliver Results.</h2>
           </motion.div>
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
@@ -149,7 +148,7 @@ export default function Home() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            {[{ stat: '50+', label: 'Malaysian Businesses Served' }, { stat: '5+', label: 'Years Digital Marketing Experience' }, { stat: '6', label: 'Specialist Service Disciplines' }].map((s) => (
+            {[{ stat: '100+', label: 'Businesses Served' }, { stat: '8+', label: 'Years Digital Marketing Experience' }, { stat: '6', label: 'Specialist Services' }].map((s) => (
               <motion.div key={s.label} variants={scaleIn}><StatCard {...s} /></motion.div>
             ))}
           </motion.div>
@@ -161,7 +160,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>Who we serve</Eyebrow>
-            <h2 className="mt-3">Built for Malaysian Businesses<br />at Every Stage of Growth.</h2>
+            <h2 className="mt-3">Built for Businesses<br />at Every Stage of Growth.</h2>
           </motion.div>
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
@@ -199,8 +198,8 @@ export default function Home() {
           {/* Right trust cards */}
           <div>
             <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce} className="mb-8">
-              <Eyebrow>Why CL</Eyebrow>
-              <h2 className="mt-3">Why Malaysian Business Owners<br />Choose CL Online Marketing Agency.</h2>
+              <Eyebrow>Why CL Online Marketing Agency</Eyebrow>
+              <h2 className="mt-3">Why Business Owners<br />Choose CL Online Marketing Agency.</h2>
             </motion.div>
             <motion.div
               className="grid grid-cols-1 sm:grid-cols-2 gap-4"
@@ -212,10 +211,8 @@ export default function Home() {
               {[
                 { icon: BarChart3,    title: 'Results Over Vanity Metrics', body: 'We measure success by leads, sales, and revenue — not impressions.' },
                 { icon: Eye,         title: 'Full Transparency', body: 'Clear reporting every month. No jargon. No black boxes.' },
-                { icon: Users,       title: 'Senior-Level Execution', body: 'Experienced specialists on every account — not juniors learning on your budget.' },
                 { icon: Cpu,         title: 'AI Search Ready', body: 'We specialise in GEO, AEO, and AIO — so you stay visible as search evolves.' },
-                { icon: Globe,       title: 'Malaysia-Market Expertise', body: 'We know the local landscape, the platforms, and the competition.' },
-                { icon: MessageCircle,title: 'Responsive Communication', body: 'Fast replies. Regular updates. We treat your business like our own.' },
+                { icon: Globe,       title: 'Market Expertise', body: 'We know the platforms, the channels, and what it takes to drive real growth.' },
               ].map((t) => (
                 <motion.div key={t.title} variants={fadeUp}><TrustCard {...t} /></motion.div>
               ))}

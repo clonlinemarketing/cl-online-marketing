@@ -41,7 +41,6 @@ const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services', hasMenu: true },
-  { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ];
 

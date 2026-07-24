@@ -18,7 +18,6 @@ import SearchHub from './pages/search/SearchHub';
 import GoogleSEO from './pages/search/GoogleSEO';
 import AISearch from './pages/search/AISearch';
 import SocialManagement from './pages/SocialManagement';
-import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
 const pageVariants = {
@@ -65,7 +64,6 @@ export default function App() {
             <Route path="/services/search/google-seo" element={<AnimatedPage><GoogleSEO /></AnimatedPage>} />
             <Route path="/services/search/ai-search" element={<AnimatedPage><AISearch /></AnimatedPage>} />
             <Route path="/services/social-management" element={<AnimatedPage><SocialManagement /></AnimatedPage>} />
-            <Route path="/blog" element={<AnimatedPage><Blog /></AnimatedPage>} />
             <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
           </Routes>
         </AnimatePresence>

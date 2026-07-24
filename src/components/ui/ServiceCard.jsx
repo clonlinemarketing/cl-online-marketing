@@ -18,7 +18,7 @@ export default function ServiceCard({ icon: Icon, title, body, to }) {
   const handleMouseLeave = () => setTilt({ rotateX: 0, rotateY: 0 });
 
   return (
-    <div className="perspective-1000">
+    <div className="perspective-1000 h-full">
       <motion.div
         ref={cardRef}
         className="claymorphic p-7 flex flex-col h-full"

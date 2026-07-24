@@ -17,10 +17,10 @@ export default function SocialManagement() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>Social Media Management Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>Social Media Management</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Stay Consistent, Stay Visible,<br /><span style={{ color: '#29b6f6' }}>Stay Top of Mind.</span></motion.h1>
             <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>We manage your Facebook and Instagram presence end-to-end — strategy, content creation, scheduling, and community management — so your brand stays active and engaging without taking up your time.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.social} alt="Social media management" badge={{ text: 'Facebook & Instagram', icon: Megaphone }} badge2={{ text: 'Monthly Content Calendar', icon: Calendar }} delay={0.2} />
         </div>
@@ -31,7 +31,7 @@ export default function SocialManagement() {
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>The problem</Eyebrow>
             <h2 className="mt-3 mb-5">Inconsistent Posting Kills Brand Growth on Social Media.</h2>
-            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Most Malaysian business owners start strong on social media — then life gets busy, posts slow down, and the page goes quiet. Inconsistency erodes trust, kills algorithm reach, and tells potential customers you're not active. We fix that — permanently, professionally, and without requiring your time every week.</p>
+            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Most business owners start strong on social media — then life gets busy, posts slow down, and the page goes quiet. Inconsistency erodes trust, kills algorithm reach, and tells potential customers you're not active. We fix that — permanently, professionally, and without requiring your time every week.</p>
           </motion.div>
           <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.10)' }}>

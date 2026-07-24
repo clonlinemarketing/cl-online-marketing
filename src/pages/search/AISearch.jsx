@@ -22,15 +22,15 @@ export default function AISearch() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>AI Search Engine Optimisation Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>AI Search Engine Optimisation</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Get Your Business Cited by<br />ChatGPT, Perplexity &<br /><span style={{ color: '#29b6f6' }}>Google AI Overviews.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>The next generation of search is here. Millions of Malaysians now use AI-powered tools to find recommendations, compare services, and make buying decisions. We make sure your business is the one they find.</motion.p>
-            <motion.div className="flex flex-wrap gap-3 mb-8" variants={fadeUp}>
+            <motion.p className="text-lg" style={{ color: '#4A5568' }} variants={fadeUp}>The next generation of search is here. Millions of people now use AI-powered tools to find recommendations, compare services, and make buying decisions. We make sure your business is the one they find.</motion.p>
+            <motion.div className="flex flex-wrap gap-3 mt-6 mb-8" variants={fadeUp}>
               {['GEO', 'AEO', 'AIO'].map((t) => (
                 <span key={t} className="px-4 py-2 rounded-xl text-sm font-bold" style={{ background: 'linear-gradient(135deg, #e0f2fe, #bae6fd)', color: '#1565c0', fontFamily: 'Space Grotesk, sans-serif' }}>{t}</span>
               ))}
             </motion.div>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.aiSearch} alt="AI search engine optimisation" badge={{ text: 'ChatGPT & Perplexity Ready', icon: Brain }} badge2={{ text: 'Google AI Overviews', icon: Cpu }} delay={0.2} />
         </div>

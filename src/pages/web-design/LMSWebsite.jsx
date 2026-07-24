@@ -16,10 +16,10 @@ export default function LMSWebsite() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>LMS Website Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>LMS Website</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Sell Courses Online With a<br /><span style={{ color: '#29b6f6' }}>Professional Learning Platform.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>A complete Learning Management System for Malaysian educators, coaches, trainers, and course creators — course catalogue, student portal, payment and enrollment, and a seamless learning experience your students will love.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>A complete Learning Management System for educators, coaches, trainers, and course creators — course catalogue, student portal, payment and enrollment, and a seamless learning experience your students will love.</motion.p>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.lms} alt="LMS website design" badge={{ text: 'Student Portal Included', icon: Users }} badge2={{ text: 'Course Management', icon: BookOpen }} delay={0.2} />
         </div>
@@ -28,7 +28,7 @@ export default function LMSWebsite() {
       <section className="py-16 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <Eyebrow>Why a custom LMS?</Eyebrow>
+            <Eyebrow>Why own your own LMS?</Eyebrow>
             <h2 className="mt-3 mb-5">Stop Paying Marketplace Commissions — Own Your Learning Platform.</h2>
             <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Third-party course platforms charge heavy commissions and limit your brand control. A custom LMS website gives you full ownership, branded experience, and 100% of your course revenue — while delivering a professional, credible learning environment for your students.</p>
           </motion.div>

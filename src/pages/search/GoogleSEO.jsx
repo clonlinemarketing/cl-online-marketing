@@ -17,10 +17,10 @@ export default function GoogleSEO() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>Google SEO Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>Google SEO</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Rank Higher on Google.<br />Get Found by Customers<br /><span style={{ color: '#29b6f6' }}>Searching for You.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>First-page Google rankings for Malaysian businesses — driven by technical SEO, on-page optimisation, content strategy, and high-quality link building. Organic growth that compounds month after month.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>First-page Google rankings for businesses — driven by technical SEO, on-page optimisation, content strategy, and high-quality link building. Organic growth that compounds month after month.</motion.p>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.googleSeo} alt="Google SEO Malaysia" badge={{ text: 'First-Page Rankings', icon: TrendingUp }} badge2={{ text: 'Long-Term Organic Growth', icon: BarChart3 }} delay={0.2} />
         </div>
@@ -31,7 +31,7 @@ export default function GoogleSEO() {
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>Why Google SEO?</Eyebrow>
             <h2 className="mt-3 mb-5">The Customers Looking for You Are Already on Google.</h2>
-            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Over 90% of Malaysian internet users turn to Google when searching for products and services. Appearing on page one for the right keywords means capturing customers with high purchase intent — without paying per click. SEO is the most sustainable, highest-ROI digital marketing channel when done right.</p>
+            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Over 90% of internet users turn to Google when searching for products and services. Appearing on page one for the right keywords means capturing customers with high purchase intent — without paying per click. SEO is the most sustainable, highest-ROI digital marketing channel when done right.</p>
           </motion.div>
           <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.10)' }}>

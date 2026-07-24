@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Share2, Mail, Phone, MapPin } from 'lucide-react';
+import { Share2, Mail, Phone } from 'lucide-react';
 
 const services = [
   { label: 'Website Design & Development', to: '/services/web-design' },
@@ -18,7 +18,6 @@ const company = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
-  { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ];
 
@@ -35,7 +34,7 @@ export default function Footer() {
               <span style={{ color: '#1565c0', fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.125rem' }}>CL</span>
               <span style={{ color: 'white', fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1rem' }}> Online Marketing Agency</span>
             </div>
-            <p style={{ color: '#94a3b8', fontSize: '0.875rem', fontFamily: 'Inter, sans-serif', marginBottom: '16px', lineHeight: '1.7' }}>Malaysia's digital growth partner.</p>
+            <p style={{ color: '#94a3b8', fontSize: '0.875rem', fontFamily: 'Inter, sans-serif', marginBottom: '16px', lineHeight: '1.7' }}>Your digital growth partner.</p>
             <a
               href="https://www.facebook.com/clonlinemarketingagency"
               target="_blank"
@@ -92,10 +91,7 @@ export default function Footer() {
               <Phone size={15} style={{ color: '#29b6f6', flexShrink: 0 }} />
               +6011-2368 3513
             </a>
-            <div className="flex items-center gap-2 mb-6" style={{ color: '#94a3b8', fontSize: '0.875rem', fontFamily: 'Inter, sans-serif' }}>
-              <MapPin size={15} style={{ color: '#29b6f6', flexShrink: 0 }} />
-              Malaysia
-            </div>
+            <div className="mb-6" />
             <a href="/contact" className="btn-primary" style={{ fontSize: '0.875rem', padding: '10px 20px' }}>Book a Call</a>
           </div>
         </div>
@@ -105,7 +101,7 @@ export default function Footer() {
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '20px 24px' }}>
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <p style={{ color: '#94a3b8', fontSize: '0.8125rem', fontFamily: 'Inter, sans-serif', margin: 0 }}>
-            © 2026 CL Online Marketing Agency. All rights reserved.
+            © CL Online Marketing Agency 201903010031 (002924457-K). All rights reserved.
           </p>
           <div className="flex gap-4">
             {['Privacy Policy', 'Terms of Use', 'Disclaimer'].map(t => (

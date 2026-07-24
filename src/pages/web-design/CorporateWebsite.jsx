@@ -16,10 +16,10 @@ export default function CorporateWebsite() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>Multiple / Corporate Website Malaysia</Eyebrow></motion.div>
+            <motion.div variants={fadeUp}><Eyebrow>Multiple / Corporate Website</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>A Professional Website That Builds<br /><span style={{ color: '#29b6f6' }}>Authority and Drives Enquiries.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>Multi-page corporate websites for Malaysian SMEs, startups, and enterprises — built to establish credibility, showcase your services, and convert visitors into qualified leads.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>Multiple pages corporate websites for businesses, SMEs, startups, and enterprises — built to establish credibility, showcase your services, and convert visitors into qualified leads.</motion.p>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.corporate} alt="Corporate website design" badge={{ text: 'Authority-Building Design', icon: Globe }} badge2={{ text: 'Multi-Page Structure', icon: Users }} delay={0.2} />
         </div>
@@ -28,8 +28,8 @@ export default function CorporateWebsite() {
       <section className="py-16 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <Eyebrow>Multi-page websites</Eyebrow>
-            <h2 className="mt-3 mb-5">More Than a Homepage — a Complete Digital HQ for Your Business.</h2>
+            <Eyebrow>Multiple pages website</Eyebrow>
+            <h2 className="mt-3 mb-5">A Corporate Website is More Than Just A Brochure for Your Business.</h2>
             <p style={{ color: '#4A5568', lineHeight: 1.8 }}>A corporate website typically includes Home, About, Services, Blog, Contact — and any additional pages your business needs. It gives you the depth, authority, and credibility to compete and convert across every touchpoint of the customer journey.</p>
           </motion.div>
           <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
@@ -44,7 +44,7 @@ export default function CorporateWebsite() {
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}><h2>What's Included in Every Corporate Website.</h2></motion.div>
           <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            {[{ icon: Palette, title: 'Custom Brand Design', body: 'Designed around your brand — colours, fonts, tone, and visual identity carried consistently throughout.' }, { icon: Smartphone, title: 'Mobile-First Responsive', body: 'Perfect across all devices — your customers reach you on smartphones, tablets, and desktops alike.' }, { icon: Search, title: 'SEO-Optimised Structure', body: 'Built with SEO foundations in place — proper structure, meta tags, speed, and clean code from day one.' }, { icon: Lock, title: 'SSL & Security', body: 'HTTPS secured with SSL certificate included — trusted by Google and by your visitors.' }, { icon: BarChart3, title: 'Analytics & Tracking', body: 'Google Analytics setup so you can track traffic, user behaviour, and leads from day one.' }, { icon: Edit, title: 'Content Management', body: 'Easy-to-use backend so your team can update pages, add blog posts, and manage content independently.' }].map((t) => (<motion.div key={t.title} variants={fadeUp}><TrustCard {...t} /></motion.div>))}
+            {[{ icon: Palette, title: 'Custom Brand Design', body: 'Designed around your brand — colours, fonts, tone, and visual identity carried consistently throughout.' }, { icon: Smartphone, title: 'Mobile-First Responsive', body: 'Perfect across all devices — your customers reach you on smartphones, tablets, and desktops alike.' }, { icon: Search, title: 'SEO-Optimised Structure', body: 'Built with SEO foundations in place — proper structure, meta tags, speed, and clean code from day one.' }, { icon: Lock, title: 'SSL & Security', body: 'HTTPS secured with SSL certificate included — trusted by Google and by your visitors.' }].map((t) => (<motion.div key={t.title} variants={fadeUp}><TrustCard {...t} /></motion.div>))}
           </motion.div>
         </div>
       </section>

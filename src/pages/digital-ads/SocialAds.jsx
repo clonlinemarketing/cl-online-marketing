@@ -17,10 +17,10 @@ export default function SocialAds() {
       <section className="py-20 md:py-28 px-6 overflow-hidden" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
-            <motion.div variants={fadeUp}><Eyebrow>Facebook & Instagram Ads Malaysia</Eyebrow></motion.div>
-            <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Reach the Right Malaysian Audience<br />on Social — and<br /><span style={{ color: '#29b6f6' }}>Turn Them Into Customers.</span></motion.h1>
-            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>Precision-targeted Facebook and Instagram ad campaigns built to reach your ideal Malaysian customer — by demographics, interest, behaviour, and location — and convert them into leads and buyers.</motion.p>
-            <motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a>
+            <motion.div variants={fadeUp}><Eyebrow>Facebook & Instagram Ads</Eyebrow></motion.div>
+            <motion.h1 className="mt-4 mb-6" variants={fadeUp}>Reach the Right Audience<br />on Social — and<br /><span style={{ color: '#29b6f6' }}>Turn Them Into Customers.</span></motion.h1>
+            <motion.p className="text-lg mb-8" style={{ color: '#4A5568' }} variants={fadeUp}>Precision-targeted Facebook and Instagram ad campaigns built to reach your ideal customer — by demographics, interest, behaviour, and location — and convert them into leads and buyers.</motion.p>
+            <div><motion.a href="/contact" className="btn-primary" variants={fadeUp} whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }}>Book a Call</motion.a></div>
           </motion.div>
           <HeroImage src={HERO_IMAGES.socialAds} alt="Social media advertising" badge={{ text: 'Precise Audience Targeting', icon: Target }} badge2={{ text: 'Facebook & Instagram', icon: Users }} delay={0.2} />
         </div>
@@ -30,8 +30,8 @@ export default function SocialAds() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>Why social media ads?</Eyebrow>
-            <h2 className="mt-3 mb-5">Malaysian Consumers Spend Hours on Social Media Every Day.</h2>
-            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Malaysia has one of the highest social media usage rates in Southeast Asia. Facebook and Instagram give you unparalleled access to a massive audience you can target by age, location, interest, and behaviour — reaching potential customers you'd never find through search alone.</p>
+            <h2 className="mt-3 mb-5">Consumers Spend Hours on Social Media Every Day.</h2>
+            <p style={{ color: '#4A5568', lineHeight: 1.8 }}>Facebook and Instagram give you unparalleled access to a massive audience you can target by age, location, interest, and behaviour — reaching potential customers you'd never find through search alone.</p>
           </motion.div>
           <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.10)' }}>
@@ -53,7 +53,7 @@ export default function SocialAds() {
       <section className="py-20 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-4xl mx-auto">
           <motion.div className="text-center mb-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}><Eyebrow>FAQ</Eyebrow><h2 className="mt-3">Social Media Ads Questions Answered.</h2></motion.div>
-          <FAQAccordion items={[{ q: 'Should I use Facebook Ads or Google Ads for my business?', a: 'It depends on your business model. Google Ads captures existing demand (people actively searching). Facebook/Instagram Ads create demand by reaching people who may not be searching yet but match your ideal customer profile. Many businesses benefit from both working together.' }, { q: 'What budget do I need for Facebook and Instagram Ads in Malaysia?', a: 'Budget requirements vary by industry and objective. We\'ll recommend an appropriate starting budget based on your goals after our initial strategy call.' }, { q: 'Do you create the ad creatives?', a: 'Yes. We produce the ad visuals and copywriting as part of the service — you review and approve before anything goes live.' }, { q: 'How long before I see results from social media ads?', a: 'Social media ads typically show results within the first 2–4 weeks as the algorithm learns. Performance usually improves significantly after the initial learning phase.' }]} />
+          <FAQAccordion items={[{ q: 'Should I use Facebook Ads or Google Ads for my business?', a: 'It depends on your business model. Google Ads captures existing demand (people actively searching). Facebook/Instagram Ads create demand by reaching people who may not be searching yet but match your ideal customer profile. Many businesses benefit from both working together.' }, { q: 'What budget do I need for Facebook and Instagram Ads?', a: 'Budget requirements vary by industry and objective. We\'ll recommend an appropriate starting budget based on your goals after our initial strategy call.' }, { q: 'Do you create the ad creatives?', a: 'Yes. We produce the ad visuals and copywriting as part of the service — you review and approve before anything goes live.' }, { q: 'How long before I see results from social media ads?', a: 'Social media ads typically show results within the first 2–4 weeks as the algorithm learns. Performance usually improves significantly after the initial learning phase.' }]} />
         </div>
       </section>
       <CTABanner headline="Ready to Launch Social Ads That Reach the Right Customers?" cta1="Book a Call" />

@@ -35,24 +35,26 @@ export default function About() {
           <motion.div variants={staggerContainer} {...safeAnimAnimate(staggerContainer, shouldReduce)}>
             <motion.div variants={fadeUp}><Eyebrow>About CL Online Marketing Agency</Eyebrow></motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>
-              We Help Malaysian Businesses<br />Grow Online — With Strategy,<br />
+              We Help Businesses<br />Grow Online — With Strategy,<br />
               <span style={{ color: '#29b6f6' }}>Not Guesswork.</span>
             </motion.h1>
             <motion.p className="text-lg mb-8" style={{ color: '#4A5568', lineHeight: 1.7 }} variants={fadeUp}>
-              CL Online Marketing Agency is a results-driven digital marketing agency based in Malaysia.
+              CL Online Marketing Agency is a results-driven digital marketing agency.
               We partner with SMEs, startups, corporate and enterprise businesses to build online presence,
               drive qualified traffic, and turn clicks into real customers.
             </motion.p>
+            <div>
             <motion.a href="/contact" className="btn-primary inline-flex items-center gap-2" variants={fadeUp}
               whileHover={shouldReduce ? {} : { scale: 1.03, y: -2 }} whileTap={shouldReduce ? {} : { scale: 0.97 }}>
               Book a Call <ArrowRight size={16} />
             </motion.a>
+            </div>
           </motion.div>
           <HeroImage
             src={HERO_IMAGES.about}
             alt="CL Online Marketing Agency team"
-            badge={{ text: '5+ Years Experience', icon: BarChart3 }}
-            badge2={{ text: '50+ Clients Served', icon: Users }}
+            badge={{ text: '8+ Years Experience', icon: BarChart3 }}
+            badge2={{ text: '100+ Clients Served', icon: Users }}
             delay={0.2}
           />
         </div>
@@ -77,9 +79,9 @@ export default function About() {
             <Eyebrow>Our story</Eyebrow>
             <h2 className="mt-3 mb-6">Built for Businesses That Deserve<br />Better Than Average.</h2>
             {[
-              'Too many Malaysian businesses invest in digital marketing and see little return. Agencies that overpromise, underdeliver, and leave clients confused about where their money went.',
-              'CL Online Marketing Agency was founded to be the agency we wished existed — transparent, accountable, and genuinely invested in your business growth, not just your monthly retainer.',
-              'Today we work with a focused portfolio of Malaysian business owners, SMEs, startups, and enterprise clients — delivering digital marketing strategies built around real business goals.',
+              'CL Online Marketing Agency was founded in 2018 with a simple focus — helping businesses rank on Google. We started with Google SEO, building first-page rankings for our earliest clients and learning what it really takes to drive measurable online growth.',
+              'As our clients\' needs grew, so did we. We expanded into website design and development, Google Ads, social media ads, and social media management — building a full-service digital marketing agency that handles everything a business needs to grow online.',
+              'Today, we partner with a focused portfolio of SMEs, startups, corporate, and enterprise businesses — delivering digital marketing strategies built around real business goals and measurable outcomes.',
             ].map((p, i) => (
               <motion.p
                 key={i}
@@ -115,7 +117,7 @@ export default function About() {
           whileInView="visible"
           viewport={viewportOnce}
         >
-          {[{ stat: '50+', label: 'Malaysian Clients Served' }, { stat: '5+', label: 'Years of Experience' }, { stat: '6', label: 'Service Disciplines' }].map((s) => (
+          {[{ stat: '100+', label: 'Clients Served' }, { stat: '8+', label: 'Years of Experience' }, { stat: '6', label: 'Service Disciplines' }].map((s) => (
             <motion.div key={s.label} variants={scaleIn}><StatCard {...s} /></motion.div>
           ))}
         </motion.div>
@@ -126,14 +128,14 @@ export default function About() {
         <div className="max-w-5xl mx-auto text-center">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <Eyebrow>What we do</Eyebrow>
-            <h2 className="mt-3 mb-4">Full-Stack Digital Marketing<br />for Malaysian Businesses.</h2>
-            <p className="mb-10 max-w-2xl mx-auto" style={{ color: '#4A5568' }}>
+            <h2 className="mt-3 mb-4">Full-Stack Digital Marketing<br />for Businesses.</h2>
+            <p className="mb-10 max-w-2xl mx-auto text-center" style={{ color: '#4A5568' }}>
               We go deep on the services that move the needle — website design and development, Google SEO,
               AI search engine optimisation, Google Ads, social media ads, and social media management.
             </p>
           </motion.div>
           <motion.div
-            className="flex flex-wrap justify-center gap-3"
+            className="flex flex-wrap justify-center gap-3 mt-6"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -166,12 +168,10 @@ export default function About() {
             viewport={viewportOnce}
           >
             {[
-              { icon: BarChart3,    title: 'Results Not Reports', body: 'We measure everything against real business outcomes — not vanity metrics or activity reports.' },
+              { icon: BarChart3,    title: 'Results Over Vanity Metrics', body: 'We measure everything against real business outcomes — not vanity metrics or activity reports.' },
               { icon: Eye,         title: 'Full Transparency', body: 'No hidden fees, no jargon-filled reports. You always know exactly what we\'re doing and why.' },
-              { icon: Users,       title: 'Senior-Level Execution', body: 'Your account is managed by experienced specialists — not passed to juniors to learn on.' },
               { icon: Cpu,         title: 'Future-Ready Thinking', body: 'From GEO to AEO to AIO, we invest in staying ahead so our clients always benefit first.' },
-              { icon: Globe,       title: 'Malaysia-Market Expertise', body: 'We know the local digital landscape, consumer behaviour, and competitive dynamics across Malaysia.' },
-              { icon: MessageCircle,title: 'Responsive & Reliable', body: 'Fast communication, regular updates, and consistent delivery — every single month.' },
+              { icon: Globe,       title: 'Market Expertise', body: 'We know the digital landscape, the platforms, and what it takes to drive real results.' },
             ].map((v) => (
               <motion.div key={v.title} variants={fadeUp}><TrustCard {...v} /></motion.div>
             ))}
@@ -238,36 +238,6 @@ export default function About() {
               </div>
             </motion.div>
           ))}
-        </div>
-      </section>
-
-      {/* MALAYSIA FOCUS */}
-      <section className="py-20 px-6" style={{ background: '#FFFFFF' }}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <Eyebrow>Malaysia-based</Eyebrow>
-            <h2 className="mt-3 mb-5">A Malaysian Agency Built<br />for Malaysian Businesses.</h2>
-            <p style={{ color: '#4A5568', lineHeight: 1.7 }}>
-              We're not a multinational with a local office. We're a Malaysian team that lives and works in the
-              same market as our clients — understanding local consumer behaviour, platform dynamics, and the
-              competitive landscape across Malaysia's key industries.
-            </p>
-          </motion.div>
-          <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewportOnce}>
-            <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.10)' }}>
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80"
-                alt="Malaysia digital market"
-                loading="lazy"
-                style={{ width: '100%', height: '360px', objectFit: 'cover', display: 'block' }}
-              />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(21,101,192,0.15), transparent)' }} />
-              <div className="absolute bottom-6 left-6 glassmorphic px-5 py-3">
-                <p style={{ margin: 0, fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, color: '#1565c0', fontSize: '1.25rem' }}>Malaysia</p>
-                <p style={{ margin: 0, fontFamily: 'Inter, sans-serif', color: '#4A5568', fontSize: '0.8125rem' }}>Your Digital Growth Partner</p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
 

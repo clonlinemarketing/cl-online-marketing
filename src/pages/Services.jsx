@@ -19,7 +19,7 @@ const serviceBlocks = [
     num: '01',
     eyebrow: 'Website Design & Development',
     headline: 'Your Website is Your Most Powerful Sales Tool.',
-    body: 'A slow, outdated, or generic website costs you customers every single day. We design and build high-performance websites for Malaysian businesses — built to impress, optimised for search, and engineered to convert.',
+    body: 'A slow, outdated, or generic website costs you customers every single day. We design and build high-performance websites for businesses — built to impress, optimised for search, and engineered to convert.',
     image: HERO_IMAGES.webDesign,
     imageAlt: 'Website design and development',
     hub: '/services/web-design',
@@ -250,13 +250,13 @@ export default function Services() {
               <Eyebrow>Our Digital Marketing Services</Eyebrow>
             </motion.div>
             <motion.h1 className="mt-4 mb-6" variants={fadeUp}>
-              Every Online Marketing Service<br />Your Business Needs —<br />
-              <span style={{ color: '#29b6f6' }}>In One Agency.</span>
+              Online Marketing Solutions<br />Your Business Needs —<br />
+              <span style={{ color: '#29b6f6' }}>All In One Agency.</span>
             </motion.h1>
             <motion.p className="text-lg mb-8" style={{ color: '#4A5568', maxWidth: '520px' }} variants={fadeUp}>
               From website design and development to Google SEO, AI search engine optimisation,
               Google Ads, social media ads, and social media management — end-to-end digital
-              marketing for Malaysian businesses.
+              marketing for businesses.
             </motion.p>
             <motion.div className="flex flex-wrap gap-3" variants={fadeUp}>
               <Link to="/contact" className="btn-primary">Book a Call</Link>
@@ -269,7 +269,7 @@ export default function Services() {
             src={HERO_IMAGES.services}
             alt="CL Online Marketing Agency team"
             badge={{ text: '6 Service Disciplines', icon: Zap }}
-            badge2={{ text: 'Malaysia-Based Team', icon: Globe }}
+            badge2={{ text: '6 Core Services', icon: Globe }}
             delay={0.2}
           />
         </div>
@@ -279,9 +279,9 @@ export default function Services() {
       <section className="py-14 px-6" style={{ background: '#F5F7FA' }}>
         <div className="max-w-4xl mx-auto text-center">
           <motion.div {...safeAnim(fadeUp, shouldReduce)}>
-            <h2 className="mb-5">One Agency. Full Stack. Zero Compromise.</h2>
+            <h2 className="mb-5">One Agency. All in One Solution.</h2>
             <p className="text-lg leading-relaxed" style={{ color: '#4A5568' }}>
-              Most Malaysian businesses work with 3–4 different vendors — a web designer here, an SEO agency there,
+              Most businesses work with 3–4 different vendors — a web designer here, an SEO agency there,
               someone else for ads. The result: misaligned strategies, duplicated costs, and nobody accountable
               for the full picture. At CL Online Marketing Agency, everything works together —
               one team, one strategy, one point of accountability.
@@ -306,9 +306,9 @@ export default function Services() {
             {...safeAnim(staggerContainer, shouldReduce)}
           >
             {[
-              { stat: '50+', label: 'Malaysian Businesses Served' },
-              { stat: '5+',  label: 'Years Experience' },
-              { stat: '6',   label: 'Service Disciplines' },
+              { stat: '100+', label: 'Businesses Served' },
+              { stat: '8+',  label: 'Years Experience' },
+              { stat: '6',   label: 'Specialist Services' },
             ].map((s) => (
               <motion.div key={s.label} variants={fadeUp}>
                 <StatCard {...s} />
